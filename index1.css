@@ -201,7 +201,7 @@ margin-left:-3vw;
 
 
 
-@media screen and (max-width: 500px) {
+@media(max-width: 600px) {
 
   td
 	{
@@ -213,7 +213,7 @@ margin-left:-3vw;
 		
 		text-align:center;
 		width:100px;
-		height:2vh;
+		height:1vh;
 		transition: .5s;
 	}
 	td:nth-child(even)
