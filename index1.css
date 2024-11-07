@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200..700&display=swap');
+body
+{
+/*background-color:#503146;*/
+
+background: rgba(80,49,70,1);
+background: linear-gradient(163deg, rgba(80,49,70,1) 0%, rgba(68,47,79,1) 100%); 
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+color:#FAECD1;
+font-family: "Yaldevi", sans-serif;
+font-size:1vw;
+}
+.cwierc
+{
+
+	padding:1%;
+	margin:-1%;
+	width:42vw;
+	height:100%;
+	/* background-color:rgba(255,0,0,0.1); */
+	position:static;
+	float:left;
+	
+	
+}
+.cwierc2
+{
+	
+	width:13vw;
+	height:100%;
+	margin:0  1vw 0 0vw;
+	position:static;
+	float:left;
+}
+
+.cwierc3
+{
+	background: #67427d;
+	width:20%;
+	height:100vh;
+	margin-top:-1%;
+	
+	padding:4%;
+	position:absolute;
+	right:0;
+	float:right;
+}
+button, select, input	
+{
+font-size:.8vw;	
+cursor: pointer;
+border: 0px solid rgb(187, 204, 0);
+width:13vw;
+height:2vw;
+color: rgb(250, 236, 209);
+transition: .3s;
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+border-radius: 6px;
+background: #67427d;
+font-weight: 400;
+}
+sup
+{
+font-size:.3vw;		
+}
+
+input[type=number] { 
+  -moz-appearance: textfield;
+  appearance: textfield;
+  text-align:center;
+  margin: 0; 
+  font-size:1.1vw;
+}
+
+
+button:hover
+{
+transition: 1s;
+font-weight: 700;
+color:#2e1c28;
+background: rgb(204, 0, 105);
+border-color: rgb(204, 0, 105);
+border-width: 0px;
+border-style: solid;
+}
+
+td
+{
+	font-size:.9vw;
+	cursor: pointer;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	background: #67427d;
+	border: 1px solid #FAECD1;
+	border-radius: 6px;
+	text-align:center;
+	width:9vw;
+	height:2vw;
+	transition: .5s;
+}
+td:hover
+{
+	font-weight:bold;
+	background: #2e1c28;
+	border-color: rgb(204, 0, 105);
+	color: rgb(204, 0, 105);
+
+}
+
+td:nth-child(even)
+{
+	width:2vw;
+	
+	font-weight:bold;
+
+}
+
+p
+{
+	font-size:1.3vw;
+	height:.6vw;
+}
+
+.spacer
+{
+	margin-top:-.2vh;
+	margin-bottom:2vh;
+	height:.8vw;
+}
+
+select
+{
+
+	margin-top:.3vh;
+}
+.checkbox
+{
+	
+	width:fit-content;
+}
+input
+{
+	width:2vw;
+	border:0;
+	background-color:rgba(0,0,0,0);
+}
+.container input:checked ~ .checkmark {
+  background-color: red;
+}
+
+
+
+
+.checkbox > input 
+{
+
+    appearance: none;
+    border-radius: 4px;
+    transition-duration: 0.3s;
+    background-color: rgba(0,0,0,0);
+
+}
+
+.checkbox > input:checked {
+  
+    background-color: #FAECD1;
+}
+#atuty, #wady 
+{
+	font-size:.8vw;
+	line-height:3vh;
+}
+.cechy_w
+{
+	font-size:.95vw;
+}
+p{font-size:1.2vw;block-size: fit-content;}
+
+img
+{
+	
+margin-top:-30vh;	
+width:3vw;
+height:3vw;
+cursor:pointer;
+mix-blend-mode: luminosity;
+
+}
+img:hover
+{
+mix-blend-mode: normal;
+}
+hr
+{
+border: 1px solid rgba(80,49,70,1);
+  border-radius: 5px;	
+  width:25vw;
+margin-left:-3vw;
+}

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<script src="index1.js"></script> 
+		<link rel="stylesheet" href="index1.css">
+	   <title>uberduper generejtor postaci do rpdżów</title>
+	</head>
+	<body>
+	<div class="cwierc">
+	
+		<div class="cwierc2">
+			<button onclick="starter()">Wylosuj atrybuty	</button>
+			
+			<select>
+			  <option value=6>Człowiek</option>
+			  <option value=8>Inna</option>
+			</select>		
+			<select  id="klasyczek">
+			  <option value=0>Wojownik</option>
+			  <option value=1>Dyplomata</option>
+			  <option value=2>Tropiciel</option>
+			  <option value=3>Mędrzec</option>
+			  <option value=4>Rzemieślnik</option>
+			  <option value=5>Brak</option>
+			</select>				
+			<select id="kulturka">
+				<option value=0>Aqoiczyk</option>
+				<option value=1>Begnak</option>
+				<option value=2>Kameeńczyk</option>
+				<option value=3>Vuryjczyk</option>
+				<option value=4>Wyspiarz z Chideum</option>
+				<option value=5>Nieokreślona kultura</option>
+			</select>		
+
+			<select id="zaawansowanie">
+			  <option value=6>Niedołężny(K6+6)</option>
+			  <option value=8>Początkujący(K8+6)</option>
+			  <option value=10>Standardowy (K10+6)</option>
+			  <option value=12>Doświadczony(K12+6)</option>
+			  <option value=13>Zaawansowany(K13+6)</option>
+			</select>
+			
+			<select id="bonusik">
+			  <option value=0>Intuicja +1</option>
+			  <option value=1>Kondycja +1</option>
+			  <option value=2>Odwaga +1</option>
+			  <option value=3>Rozsądek +1</option>
+			  <option value=4>Siła +1</option>
+			  <option value=5>Zręczność +1</option>
+			  <option value=6>Zwinność +1</option>
+			  <option value=8>Brak bonusu </option>
+			</select>
+			
+			
+			<p class="spacer">Atrybuty podstawowe </p>
+			<table>
+				<tbody>
+				<tr>
+					<td>Intuicja</td>
+					<td ><input class="atrybuty_p" onchange="zdolnosci_all() " value=7 min=7 max=30 type="number"> </td>
+				</tr>
+				<tr>
+					<td>Kondycja</td>
+					<td ><input class="atrybuty_p" onchange="zdolnosci_all() "  value=7 min=7 max=30 type="number"> </td>
+				</tr>
+				<tr>
+					<td>Odwaga</td>
+					<td ><input class="atrybuty_p" onchange="zdolnosci_all() "  value=7 min=7 max=30 type="number"> </td>
+				</tr>
+				<tr>
+					<td>Rozsądek</td>
+					<td ><input class="atrybuty_p" onchange="zdolnosci_all() "  value=7 min=7 max=30 type="number"> </td>
+				</tr>
+				<tr>
+					<td>Siła</td>
+					<td ><input class="atrybuty_p" onchange="zdolnosci_all() "  value=7 min=7 max=30 type="number"> </td>
+				</tr>
+				<tr>
+					<td>Zręczność</td>
+					<td ><input class="atrybuty_p" onchange="zdolnosci_all() "  value=7 min=7 max=30 type="number"> </td>
+				</tr>
+				<tr>
+					<td>Zwinność</td>
+					<td ><input class="atrybuty_p" onchange="zdolnosci_all() "  value=7 min=7 max=30 type="number"> </td>
+				</tr>
+				</tbody>
+				</table>
+		
+			
+		
+		
+			<p class="spacer">Atrybuty wynikowe</p>
+				<table>
+				<tbody>
+				<tr>
+					<td>Zdrowie</td>
+					<td class="atrybuty_w"> </td>
+				</tr>
+				<tr>
+					<td>Poczytalność</td>
+					<td class="atrybuty_w"> </td>
+				</tr>
+				<tr>
+					<td>Odporność</td>
+					<td class="atrybuty_w"> </td>
+				</tr>		
+				<tr>
+					<td>Unik</td>
+					<td class="atrybuty_w"> </td>
+				</tr>
+				<tr>
+					<td>Inicjatywa</td>
+					<td class="atrybuty_w"> </td>
+				</tr>
+				<tr>
+					<td>Suma(?)</td>
+					<td class="atrybuty_w"> </td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
+			
+			
+			
+			<div class="cwierc2">
+			
+			
+			
+			
+				
+				<p class="spacer">Zdolności fizyczne (%)</p>
+				<table>
+				<tbody>
+				<tr>
+					<td>Balans ciała</td>
+					<td class="zdolnosci_f"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				<tr>
+					<td>Kieszonkostwo </td>
+					<td class="zdolnosci_f"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				<tr>
+					<td>Spostrzegawczość </td>
+					<td class="zdolnosci_f"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				<tr>
+					<td>Tężyzna </td>
+					<td class="zdolnosci_f"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				<tr>
+					<td>Ukrywanie  się</td>
+					<td class="zdolnosci_f"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				<tr>
+					<td>Wspinaczka </td>
+					<td class="zdolnosci_f"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				<tr>
+					<td>Wstrzemięźliwość </td>
+					<td class="zdolnosci_f"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				</tbody>
+				</table>	
+				
+				
+				<p class="spacer">Zdolności społeczne (%)</p>
+				<table>
+				<tbody>
+				<tr>
+					<td>Empatia </td>
+					<td class="zdolnosci_s"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				<tr>
+					<td>Rozmowa </td>
+					<td class="zdolnosci_s"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				<tr>
+					<td>Siła woli </td>
+					<td class="zdolnosci_s"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+		
+			
+			
+				</tbody>
+				</table>
+				
+				
+				<p class="spacer">Zdolności naturalne (%)</p>
+				<table>
+				<tbody>
+				<tr>
+					<td>Liny i węzły </td>
+					<td class="zdolnosci_n"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				<tr>
+					<td>Nawigacja </td>
+					<td class="zdolnosci_n"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				<tr>
+					<td>Przetrwanie </td>
+					<td class="zdolnosci_n"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				<tr>
+					<td>Tropienie </td>
+					<td class="zdolnosci_n"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				<tr>
+					<td>Wiedza o roślinach</td>
+					<td class="zdolnosci_n"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				<tr>
+					<td>Wiedza o zwierzętach </td>
+					<td class="zdolnosci_n"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+			
+				</tbody>
+				</table>	
+				
+				
+				
+			</div>
+			
+			
+			<div class="cwierc2">
+			
+				
+				
+				<p class="spacer">Zdolności uczone (%)</p>
+				<table>
+				<tbody>
+				<tr>
+					<td>Astronomia </td>
+					<td class="zdolnosci_u"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				<tr>
+					<td>Historia </td>
+					<td class="zdolnosci_u"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				<tr>
+					<td>Mechanika </td>
+					<td class="zdolnosci_u"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				<tr>
+					<td>Mity i legendy </td>
+					<td class="zdolnosci_u"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				<tr>
+					<td>Prawa </td>
+					<td class="zdolnosci_u"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>				
+				<tr>
+					<td>Wiedza magiczna </td>
+					<td class="zdolnosci_u"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>					
+				<tr>
+					<td>Wiedza taktyczna </td>
+					<td class="zdolnosci_u"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>		
+			
+			
+				</tbody>
+				</table>
+				
+				
+				
+				<p class="spacer">Zdolności cechowe (%)</p>
+				<table>
+				<tbody>
+				<tr>
+					<td>Alchemia </td>
+					<td class="zdolnosci_c"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				<tr>
+					<td>Gotowanie </td>
+					<td class="zdolnosci_c"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				<tr>
+					<td>Leczenie chorób </td>
+					<td class="zdolnosci_c"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				<tr>
+					<td>Leczenie duszy </td>
+					<td class="zdolnosci_c"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>
+				<tr>
+					<td>Leczenie ran </td>
+					<td class="zdolnosci_c"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>				
+				<tr>
+					<td>Leczenie trucizn </td>
+					<td class="zdolnosci_c"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>					
+				<tr>
+					<td>Otwieranie zamków  </td>
+					<td class="zdolnosci_c"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="zdolnosci_all()" class="zdolnosci_speciall" >    </td>
+				</tr>		
+			
+			
+				</tbody>
+				</table>				
+				
+				
+			</div>
+			
+
+		</div>
+		<div class="cwierc">
+			
+		<div class="cwierc2">	
+			
+			
+			<p class="spacer"> Techniki walki</p>
+
+
+<form>
+			<table>
+				<tbody>
+				<tr>
+				<td>Kusze </td>
+					<td class="techniki_w"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="fun_techniki_w()" class="techniki_wbox" >    </td>
+				</tr>
+				<tr>
+					<td>Łuki </td>
+					<td class="techniki_w"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="fun_techniki_w()" class="techniki_wbox" ></td>
+				</tr>
+				<tr>
+					<td>Sztylety </td>
+					<td class="techniki_w"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="fun_techniki_w()" class="techniki_wbox" ></td>
+				</tr>
+				<tr>
+					<td>Broń szermiercza </td>
+					<td class="techniki_w"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="fun_techniki_w()" class="techniki_wbox" ></td>
+				</tr>
+				<tr>
+					<td>Broń uderzeniowa  </td>
+					<td class="techniki_w"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="fun_techniki_w()" class="techniki_wbox" ></td>
+				</tr>				
+				<tr>
+					<td>Broń łańcuchowa  </td>
+					<td class="techniki_w"> </td>
+					<td class="checkbox"><input type="checkbox"  onclick="fun_techniki_w()" class="techniki_wbox"></td>
+				</tr>					
+				<tr>
+					<td>Lance   </td>
+					<td class="techniki_w"> </td>
+					<td class="checkbox"><input type="checkbox" onclick="fun_techniki_w()" class="techniki_wbox" ></td>
+				</tr>				
+				<tr>
+					<td>Pięści   </td>
+					<td class="techniki_w"> </td>
+					<td class="checkbox"><input type="checkbox"  onclick="fun_techniki_w()" class="techniki_wbox"></td>
+				</tr>					
+				<tr>
+					<td>Parowanie   </td>
+					<td class="techniki_w"> </td>
+				
+				</tr>		
+			
+			
+				</tbody>
+				</table>				
+			
+			</form>
+			<p > Atuty</p>
+			<div id="atuty"></div>
+			
+			<p > Wady</p>
+			<div id="wady"></div>
+
+		</div>
+		
+		<div class="cwierc3">
+		
+		
+		<a href="https://docs.google.com/document/d/1PyGK8y0SoAu601Kh9krWzXmze1htpdN-33cozA1-IuU/edit?usp=sharing" target="_blank">
+		<img src="https://cdn-icons-png.flaticon.com/512/5968/5968517.png">
+		</a>
+		
+		<a href="https://docs.google.com/spreadsheets/d/1t_7neU3Fj_MVy-WlntFjx8nKSAHcfV58MSiBnS5WDjI/edit?usp=sharing" target="_blank">
+		<img src="https://cdn-icons-png.flaticon.com/512/5968/5968557.png">
+		</a>
+		Materiały pomocnicze
+		
+		
+		<hr>
+		<p class="spacer"> Cechy wyglądu</p>
+		<p class="cechy_w">Włosy:</p>
+		<p class="cechy_w">Oczy:</p>
+		<p class="cechy_w">Wzrost:</p>
+		<p class="cechy_w">Waga:</p>
+		<p class="cechy_w">Wiek:</p>
+		<hr>
+		<p class="spacer"> Status</p>	
+		<p class="cechy_w">Klasa:</p>
+		<p class="cechy_w">Wydarzenia: </p>
+		<hr>
+		<p class="spacer"> Specjalizacje</p>	
+		<p class="cechy_w">Nie wiem co więcej można dodać, np. lore co 10 lat.</p>
+	
+		</div>
+		
+		
+		
+		
+		
+		</div>
+		
+	</body>
+	
+	
+</html>
+
+
+<!  
+intuicja kondycja odwaga rozsądek siła zręczność zwinność
