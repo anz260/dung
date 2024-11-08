@@ -1,0 +1,121 @@
+
+
+/*/
+Importy i wszystko co ważne
+/*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&family=Red+Rose:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*/
+Importy i wszystko co ważne
+/*/
+
+
+/*/
+Główna struktura 
+/*/
+
+body
+{
+	background-color:#48304C;
+	font-family: "Red Rose", serif;
+	font-size:.9vw;
+	color:#F9EBD1;
+	
+}
+#nav
+{
+	background-color:#252525;	
+	width:98vw;
+	height:7.25vh;
+	padding: 1vh 1vw;
+	
+	float:left;
+}
+#side_panel
+{
+	background-color:#67427D;
+	float:right;
+	width:21vw;
+	height:88.75vh;
+	padding: 1vh 2vw;;
+	
+}
+#contener
+{
+
+	
+	overflow: auto;
+	height:88.75vh;
+	padding: 1vh 1vw;;
+	
+}
+
+h1
+{
+	font-family: "Cantata One", serif;
+	text-align:center;
+	font-size:1.8vw;
+	margin-bottom:2vh;
+}
+hr
+{
+width:100%;	
+border-radius:12px;
+border:none;
+background-color:#F9EBD1;
+height: 3px;
+margin:2vh 0;
+}
+
+
+
+/*/
+Główna struktura 
+/*/
+
+
+/*/
+Kolumny 
+/*/
+.kolumny
+{
+	
+	 box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	border: 2px solid red;	
+	background-color:blue;
+	float:left;
+	width:fill;
+
+	width:20%;
+	height:30vh;
+	padding:1vh 1vw;
+	margin-bottom:2vh;
+}
+.kolumny:first-child
+{
+	background-color:green;
+	width:60%;
+}
+
+.kolumny:nth-child(n+4)
+{
+	background-color:gray;
+	width:20%;
+	height:90vh;
+}
+
+
+/*/
+Kolumny 
+/*/
+
+
+
