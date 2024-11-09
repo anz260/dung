@@ -67,10 +67,10 @@ function info_culture()
 	const text_info = [
 	  "Wycena +15<br>Ukrywanie się +10<br>Opieka nad zwierzętami +5<br>Religia +5", // Aqoiczyk
 	  "Zahartowanie +15<br>Historia +10<br>Mocna głowa +5<br>Przetrwanie +5", // Begnak
-	  "Żeglarstwo +15<br>Astronomia +10<br>Stolarstwo +5<br>Targowanie +5", // Hyan
+	  "Wiedza o roślinach +15<br>Wspinaczka +10<br>Krzepa +5<br>Kowalstwo +5",// Hyan
 	  "Mity i legendy +15<br>Maniery +10<br>Spostrzegawczość +5<br>Gotowanie +5", // Kameeńczyk
 	  "Siła woli +15<br>Leczenie trucizn +10<br>Alchemia +5<br>Torturowanie +5", // Vuryjczyk
-	  "Wiedza o roślinach +15<br>Wspinaczka +10<br>Krzepa +5<br>Kowalstwo +5", // Wyspiarz Cideum
+	  "Żeglarstwo +15<br>Astronomia +10<br>Stolarstwo +5<br>Targowanie +5",  // Wyspiarz Cideum
 	  "TO NA NIBY Wiedza o roślinach +15<br>Wspinaczka +10<br>Krzepa +5<br>Kowalstwo +5", // Wyspiarz Cideum
 	  "TO NA NIBY Wiedza o roślinach +15<br>Wspinaczka +10<br>Krzepa +5<br>Kowalstwo +5", // Wyspiarz Cideum
 	];
