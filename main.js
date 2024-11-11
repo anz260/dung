@@ -1,3 +1,28 @@
+	
+var intu=0;
+var k=0;
+var odw=0;
+var roz=0;
+var s=0;
+var zr=0;
+var zw=0;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	const kultury_all = [
 		"Aqoiczyk",
 		"Begnak",
@@ -305,6 +330,7 @@ function losowanie()
 	
 	
 	imiona();
+	atryb_podst();
 
 }
 
@@ -333,5 +359,50 @@ function imiona()
 	document.getElementById('heroname').value=n1[r1]+n2[r2];
 	document.getElementById('heroname').disabled = false;
 	
+	
+}
+
+function atryb_podst()
+{
+	const atrybypodstwaw=[
+	"intuicja","kondycja","odwaga","rozsadek","sila","zrecznosc","zwinnosc"
+	]
+	
+	const advantage=parseInt(document.getElementById('experience').value);
+
+	if(advantage==0)
+	{
+		for  (i=0;i<7;i++)
+		document.getElementById(atrybypodstwaw[i]).value=Math.floor(Math.random()*6)+Math.floor(Math.random()*6)+9;	
+	}
+	else  
+	{
+		for  (i=0;i<7;i++)
+		document.getElementById(atrybypodstwaw[i]).value=Math.floor(Math.random()*(14-2*advantage))+7;	
+	}
+	
+
+		
+		atryb_wyn()		
+}
+
+function atryb_wyn()
+{
+		intu=parseInt(document.getElementById("intuicja").value);
+		k=parseInt(document.getElementById("kondycja").value);
+		odw=parseInt(document.getElementById("odwaga").value);
+		roz=parseInt(document.getElementById("rozsadek").value);
+		s=parseInt(document.getElementById("sila").value);
+		zr=parseInt(document.getElementById("zrecznosc").value);
+		zw=parseInt(document.getElementById("zwinnosc").value);
+		document.getElementById('heroname').disabled = false;
+	
+	document.getElementById("zdrowie").value=k*2+5;	
+	document.getElementById("poczytalnosc").value=odw+roz+intu;	
+	document.getElementById("ochrona").value=Math.floor((2*k+s)/6);	
+	document.getElementById("inicjatywa").value=Math.floor((odw)+zr/2);	
+	document.getElementById("unik").value=Math.floor(zr/2);	
+	
+	document.getElementById("parowanie").value =Math.floor(Math.floor(Math.max(0,((odw-8)/3)))+Math.max(s/2,zw/2));
 	
 }
