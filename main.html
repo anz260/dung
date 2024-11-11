@@ -43,7 +43,65 @@
 			  <option value=4>Rzemieślnik</option>
 
 			</select>			
+		</div>		
+		
+		<div class="nav_listy" onchange="info_background()">
+		<p>Przeszłość</p>
+		<select  id="hero_background">
+			  <option value=0>Pomocnik Myśliwego</option>
+			  <option value=1>Dziecko Karczmarza</option>
+			  <option value=2>Poganiacz Zwierząt</option>
+			  <option value=3>Czeladnik Kowala</option>
+			  <option value=4>Rybak z Przystani</option>
+			  <option value=5>Złota Rączka</option>
+			  <option value=6>Osoba od Brudnej Roboty</option>
+			  <option value=7>Cmentarny Zbieracz</option>
+
+			</select>			
+		</div>	
+
+		
+		<div class="nav_listy" onchange="info_spec_prof()">
+		<p>Zawód</p>
+		<select  id="hero_spec_prof">
+			  <option value=0>Kombatant </option>
+			  <option value=1>Gladiator </option>
+			  <option value=2>Poszukiwacz Przygód </option>
+			  <option value=3>Awanturnik </option>
+
+			</select>			
 		</div>
+		
+				
+		<div class="nav_listy" onchange="info_exp()">
+		<p>Doświadczenie</p>
+		<select  id="experience">
+			  <option value=0>Ekspert </option>
+			  <option value=1>Doświadczony </option>
+			  <option value=2 selected> Zrównoważony </option>
+			  <option value=3>Nowicjusz </option>
+			  <option value=4>Łamaga </option>
+
+			</select>			
+		</div>		
+				
+		<div class="nav_listy" onclick="name_change()">
+		<p>
+		
+		Imię postaci 
+		
+		
+		</p>
+		<input type="text" maxlength=31 disabled id="heroname"> </input>	
+		</div>
+		
+	
+			<button onclick="losowanie()">
+		<!--	<p class="buttontxt">Wylosuj postać!</p> -->
+			<p class="hexagon"></p>
+			</button>
+			
+	
 	</div>
 
 	<div id="side_panel">

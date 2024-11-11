@@ -131,7 +131,7 @@ NAV--NAV--NAV--NAV--NAV
 }
 
 
-#race, #culture, #occupation
+#race, #culture, #occupation, #hero_background,#hero_spec_prof,#experience,#heroname
 {
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -143,6 +143,80 @@ NAV--NAV--NAV--NAV--NAV
 	padding:.3vw;
 	width:90%;
 }
+#heroname
+{
+	width:130%;	
+	background-color:var(--main_1);	
+}
+
+
+/*/
+BUTTON
+/*/
+
+button
+{
+	border:none;
+	width:7.5vw;
+	height:7vh;
+	float:right;
+	background-color:var(--main_1);	
+	border-radius:15px;
+	cursor:pointer;
+
+	font-size:.9vw;
+	color:var(--main_txt);
+	font-weight:700;
+	text-align:center;
+	transition:1s;
+}
+
+.hexagon 
+{
+	position:relative;
+  margin-left: auto;
+  margin-right: auto;
+  --b: 8px; /* adjust to control the border  */
+  height: 90%; /* adjust to control the size  */
+  aspect-ratio: cos(30deg);
+  clip-path: 
+    polygon(50% 0,-50% 50%,50% 100%,150% 50%,50% 0,
+    50% var(--b),
+    calc(100% - var(--b)*sin(60deg)) calc(25% + var(--b)*cos(60deg)),
+    calc(100% - var(--b)*sin(60deg)) calc(75% - var(--b)*cos(60deg)),
+    50% calc(100% - var(--b)),
+    calc(var(--b)*sin(60deg)) calc(75% - var(--b)*cos(60deg)),
+    calc(var(--b)*sin(60deg)) calc(25% + var(--b)*cos(60deg)),
+    50% var(--b));
+ 	background-color:var(--main_0);	
+	transition:.1s;
+}
+.buttontxt
+{
+	position:fixed;
+	margin-top:1vh;
+	  margin-left: 1vw;
+
+	width:5.5vw;	
+	z-index:10;
+}
+
+
+button:hover
+{ 	background-color:var(--main_0);	}
+
+button:hover > .hexagon
+{	background-color:var(--main_1);	 --b: 6px; }
+
+
+
+
+/*/
+BUTTON
+/*/
+
+
+
 /*/
 NAV--NAV--NAV--NAV--NAV
 /*/
@@ -259,13 +333,16 @@ td:nth-child(2n+1)
 Tabelki 
 /*/
 
+
+
+
 @media(max-width: 1200px) and (orientation: portrait) 
 {
 #nav
 {
 	background-color:var(--gray);
 	width:98vw;
-	height:12vh;
+	height:14.5vh;
 	padding: 1vh 1vw;
 	
 	float:left;
@@ -273,11 +350,11 @@ Tabelki
 	
 .nav_listy
 {
-	height:3vh;
+	height:3.5vh;
 	width:50%;
 
 }	
-#race, #culture, #occupation
+#race, #culture, #occupation, #hero_background,#hero_spec_prof,#experience,#heroname
 {
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -289,12 +366,20 @@ Tabelki
 	padding:.3vw;
 	width:90%;
 }	
+#heroname
+{
+	width:100%;	
+	background-color:var(--main_1);	
+}
+
+
 
 #side_panel
 {	float:left;
 	width:98vw;
 	height:8vh;
 	padding:1vw;
+		overflow:auto;
 }
 #side_panel >hr
 {	display:none;
@@ -308,22 +393,68 @@ background-color:var(--main_txt);
 height: 1px;
 margin:-5px;
 }
+p{font-size:2.8vw;}
 h1
 {
-font-size:3vw;	
+transform:   rotate(-90deg);
+font-size:2.8vw;	
+text-align:left;
 float:left;
-width:100%;
+width:20%;
+height:80%;
+
 padding:0;
 margin:0;
+margin-top:.5vh;
+margin-left:-3vw;
 }
 #text_info
 {
-font-size:1.4vw;		
+
+font-size:1.9vw;		
 float:left;
-width:100%;
-padding:0;
+width:78%;
+padding:1%;
 margin:0;
+margin-left:-3vw;
+
 }
+/*/
+BUTTON
+/*/
+
+button
+{
+	border:none;
+	width:12.5vw;
+	height:3.5vh;
+	float:right;
+
+	background-color:var(--main_1);	
+	border-radius:6px;
+	cursor:pointer;
+	margin-right:5vw;
+	margin-top:1vh;
+
+
+
+}
+.buttontxt
+{
+	position:fixed;
+	margin-top:.5vh;
+	  margin-left: .5vw;
+	font-size:2vw;
+	width:12.5vw;	
+	z-index:10;
+}
+
+
+/*/
+BUTTON
+/*/
+
+
 
 
 
