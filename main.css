@@ -497,6 +497,12 @@ button
 	width:12.5vw;	
 	z-index:10;
 }
+.hexagon 
+{
+
+  height: 4vh; /* adjust to control the size  */
+
+}
 
 
 /*/
