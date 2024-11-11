@@ -9,6 +9,7 @@ Importy i wszystko co ważne
 * {
   margin: 0;
   padding: 0;
+  
 }
 
 :root {
@@ -103,7 +104,43 @@ background-color:var(--main_txt);
 height: 3px;
 margin:2vh 0;
 }
+.hr_pion
+{
+float:left;	
+width:3px;	
+border-radius:12px;
+	
+background-color:var(--main_txt);
+height: 100%;
+margin:2vh 0;
+}
+.atrybuty_podstawowe, .atrybuty_podstawowe  > button
+{
+	font-family: "Cantata One", serif;
+	text-align:center;
+	font-size:1.2vw;	
+	width:14%;
+	height:50%;
+	float:left;
+}
 
+input[type=number] { 
+  -moz-appearance: textfield;
+  appearance: textfield;
+  text-align:center;
+  margin: 0; 
+font-size:2vw;	
+cursor: pointer;
+border: 1px solid  var(--main_txt);
+width:90%;
+height:60%;
+color: var(--main_txt);
+transition: .3s;
+
+background: var(--main_1);
+font-weight: 400;
+float:bottom;
+}
 
 
 /*/
@@ -156,8 +193,8 @@ BUTTON
 
 button
 {
-	border:none;
-	width:7.5vw;
+	border:3px solid var(--main_0);
+	width:6.5vw;
 	height:7vh;
 	float:right;
 	background-color:var(--main_1);	
@@ -169,6 +206,16 @@ button
 	font-weight:700;
 	text-align:center;
 	transition:1s;
+}
+.atrybuty_podstawowe >button
+{
+
+
+
+	width:100%;
+
+	margin-top:35%;
+	margin-bottom:auto;
 }
 
 .hexagon 
@@ -203,7 +250,7 @@ button
 
 
 button:hover
-{ 	background-color:var(--main_0);	}
+{ 	background-color:var(--main_0);	border:2px solid var(--main_1);}
 
 button:hover > .hexagon
 {	background-color:var(--main_1);	 --b: 6px; }

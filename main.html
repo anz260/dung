@@ -10,7 +10,7 @@
 <body>
 
 	<div id="nav">
-		<div class="nav_listy" onchange="info_race()">
+		<div class="nav_listy"onmouseenter="info_race()" onchange="info_race()">
 		<p>Rasa</p>
 		<select  id="race">
 			  <option value=0 >Człowiek</option>
@@ -20,7 +20,7 @@
 			</select>			
 		</div>
 		
-				<div class="nav_listy" onchange="info_culture()"  >
+				<div class="nav_listy" onmouseenter="info_culture()"onchange="info_culture()"  >
 		<p>Kultura</p>
 		<select  id="culture">
 			  <option value=0>Aqoiczyk</option>
@@ -33,7 +33,7 @@
 		</div>
 		
 		
-		<div class="nav_listy" onchange="info_occupation()">
+		<div class="nav_listy" onmouseenter="info_occupation()"onchange="info_occupation()">
 		<p>Profesja</p>
 		<select  id="occupation">
 			  <option value=0>Wojownik</option>
@@ -45,7 +45,7 @@
 			</select>			
 		</div>		
 		
-		<div class="nav_listy" onchange="info_background()">
+		<div class="nav_listy" onmouseenter="info_background()"onchange="info_background()">
 		<p>Przeszłość</p>
 		<select  id="hero_background">
 			  <option value=0>Pomocnik Myśliwego</option>
@@ -61,7 +61,7 @@
 		</div>	
 
 		
-		<div class="nav_listy" onchange="info_spec_prof()">
+		<div class="nav_listy" onmouseenter="info_spec_prof()"onchange="info_spec_prof()" >
 		<p>Zawód</p>
 		<select  id="hero_spec_prof">
 			  <option value=0>Kombatant </option>
@@ -73,7 +73,7 @@
 		</div>
 		
 				
-		<div class="nav_listy" onchange="info_exp()">
+		<div class="nav_listy" onmouseenter="info_exp()"onchange="info_exp()">
 		<p>Doświadczenie</p>
 		<select  id="experience">
 			  <option value=0>Ekspert </option>
@@ -121,10 +121,99 @@
 	<div id="contener">
 	
 		<div class="kolumny">
-		a
+		
+		
+		<!-- PIERWSZE ATRYBY -->
+		
+		
+			<div class="atrybuty_podstawowe" onmouseenter="inf_int()">
+			Int<br>
+			<input type="number" min=7 max=25>
+			</div>
+		
+			<div class="atrybuty_podstawowe" onmouseenter="inf_k()">
+			K<br>
+			<input type="number" min=7 max=25>
+			</div>
+		
+			<div class="atrybuty_podstawowe" onmouseenter="inf_odw()">
+			Odw<br>
+			<input type="number" min=7 max=25>
+			</div>
+		
+			<div class="atrybuty_podstawowe" onmouseenter="inf_roz()">
+			Roz<br>
+			<input type="number" min=7 max=25>
+			</div>
+		
+			<div class="atrybuty_podstawowe" onmouseenter="inf_s()">
+			S<br>
+			<input type="number" min=7 max=25>
+			</div>
+		
+			<div class="atrybuty_podstawowe" onmouseenter="inf_zr()">
+			Zr<br>
+			<input type="number" min=7 max=25>
+			</div>
+		
+			<div class="atrybuty_podstawowe" onmouseenter="inf_zw()">
+			Zw<br>
+			<input type="number" min=7 max=25>
+			</div>
+		
+	<!-- WYNIKOWE ATRYBY -->	
+			
+		
+			<div class="atrybuty_podstawowe" onmouseenter="inf_zdr()">
+			Zdr<br>
+			<input type="number" min=7 max=25>
+			</div>
+		
+			<div class="atrybuty_podstawowe" onmouseenter="inf_p()">
+			P<br>
+			<input type="number" min=7 max=25>
+			</div>
+		
+			<div class="atrybuty_podstawowe" onmouseenter="inf_och()">
+			Och<br>
+			<input type="number" min=7 max=25>
+			</div>
+		
+			<div class="atrybuty_podstawowe" onmouseenter="inf_ini()">
+			Ini<br>
+			<input type="number" min=7 max=25>
+			</div>
+		
+			<div class="atrybuty_podstawowe" onmouseenter="inf_u()">
+			U<br>
+			<input type="number" min=7 max=25>
+			</div>
+		
+			<div class="atrybuty_podstawowe" onmouseenter="inf_par()">
+			Par<br>
+			<input type="number" min=7 max=25>
+			</div>
+			
+			
+			
+			<div class="atrybuty_podstawowe">
+			<button >
+		<!--	<p class="buttontxt">Wylosuj postać!</p> -->
+			<p class="hexagon"></p>
+			</button>
+			</div>
+		
+		
+		
+			
+		
+		
+		
+		
 		</div>
 		<div class="kolumny">
-		b
+		<hr class="hr_pion">b
+
 		</div>
 		<div class="kolumny">
 		c

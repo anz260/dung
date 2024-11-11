@@ -216,10 +216,89 @@ function info_exp()
 }
 
 
-/*/
-/*/
-/*/
-/*/
+/*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*/
+/*//*//*//*//*//*/
+/*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*/
+/*//*//*//*//*//*/
+/*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*/
+
+function inf_int(){
+	document.querySelector('h1').innerHTML="Intuicja";
+	document.getElementById('text_info').innerHTML="Przeczucia i empatia bohatera, zdolność do czytania intencji innych, jak i stopień odporności na stres.";		
+}
+
+
+function inf_k(){
+	document.querySelector('h1').innerHTML="Kondycja";
+	document.getElementById('text_info').innerHTML="Kondycja odpowida za zdrowie postaci, jak i odproności na trucizny czy choroby.";		
+}
+
+
+function inf_odw(){
+	document.querySelector('h1').innerHTML="Odwaga";
+	document.getElementById('text_info').innerHTML="Odporność na obrażenia magiczne, jak i maksymalną ilość stresu.";		
+}
+
+
+function inf_roz(){
+	document.querySelector('h1').innerHTML="Rozsądek";
+	document.getElementById('text_info').innerHTML="Generalna wiedza i zdolność do wnioskowania.";		
+}
+
+
+function inf_s(){
+	document.querySelector('h1').innerHTML="Siła";
+	document.getElementById('text_info').innerHTML="Podnoszenie, przesuwanie i wchodzenie w interakcje, jak i zadawane obrażenia w zwarciu.	";		
+}
+
+function inf_zr(){
+	document.querySelector('h1').innerHTML="Zręczność";
+	document.getElementById('text_info').innerHTML="Gibkość postaci, jest to koordynaja ręka oko, przydaje się w rzutach wymagających precyzji.	";		
+}
+
+function inf_zw(){
+	document.querySelector('h1').innerHTML="Zwinność";
+	document.getElementById('text_info').innerHTML="Zwinność odpowiada za szybkość reakcji, jak i ogólną szybkość wykonywanych ruchów.	";		
+}
+
+function inf_zdr(){
+	document.querySelector('h1').innerHTML="Zdrowie";
+	document.getElementById('text_info').innerHTML="5+2Kon";		
+}
+function inf_p(){
+	document.querySelector('h1').innerHTML="Poczytalność";
+	document.getElementById('text_info').innerHTML="Odw+Roz+Int";		
+}
+function inf_och(){
+	document.querySelector('h1').innerHTML="Ochrona";
+	document.getElementById('text_info').innerHTML="(2Kon+S)/6";		
+}
+function inf_ini(){
+	document.querySelector('h1').innerHTML="Inicjatywa";
+	document.getElementById('text_info').innerHTML="Odw+Zr/2 (+D6 w walce)";		
+}
+function inf_u(){
+	document.querySelector('h1').innerHTML="Unik";
+	document.getElementById('text_info').innerHTML="Zr/2";		
+}
+function inf_par(){
+	document.querySelector('h1').innerHTML="Parowanie";
+	document.getElementById('text_info').innerHTML="Połowa Siły albo Zręczności i +1 za każde pełne 3 powyżej 8 Odwaga";		
+}
+
+
+
+
+
+
+
+
+/*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*/
+/*//*//*//*//*//*/
+/*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*/
+/*//*//*//*//*//*/
+/*//*//*//*//*//*//*//*//*//*//*//*//*//*//*//*/
+
 
 function losowanie()
 {
